@@ -22,7 +22,7 @@ describe("Autentification nominale", function () {
     cy.get('[data-test="error-button"]')
       .should("be.visible")
       .and(
-        "contain",
+        "contain.text",
         "Epic sadface: Username and password do not match any user in this service"
       );
   });
